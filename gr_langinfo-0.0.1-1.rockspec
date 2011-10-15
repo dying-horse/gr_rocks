@@ -1,0 +1,10 @@
+package   = "gr_langinfo"
+version   = "0.0.1-1"
+source    = {
+ url = "git://github.com/dying-horse/gr_langinfo.git" }
+description = {
+ summary = "stellt einige Funktionen der langinfo-Bibliothek aus der libc dem Lua-System bereit" }
+build     = {
+ type = "builtin",
+ modules = {
+  gr_langinfo = { "gr_langinfo.c" } }}

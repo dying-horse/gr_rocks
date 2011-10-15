@@ -1,0 +1,15 @@
+package = "gr_unicode"
+version = "0.0.1-1"
+source  = {
+ url = "git://github.com/dying-horse/gr_unicode.git" }
+description = {
+ summary = "unterstützt das Lesen von Unicode-Quellen" }
+build = {
+ type = "builtin",
+ modules = {
+  main = "gr_unicode.lua",
+  unicode_aux  = { "unicode_aux.c" },
+  unicode                = "gr_unicode_base.lua",
+  acceptor               = "gr_unicode_acceptor.lua",
+  source                 = "gr_unicode_source.lua" }}
+dependencies = { "gr_source" }
